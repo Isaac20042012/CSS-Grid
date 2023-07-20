@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(80deg, #7159c1, #c159bc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito';
+  height: 100vh;
+}
+
+.container {
+  background: linear-gradient(80deg, #604ca3, #ac50a7);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas: "h m a" "h f f";
+  grid-gap: 10px;
+  height: 500px;
+  width: 500px;
+  padding: 10px;
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.012);
+  border-radius: 10px;
+}
+
+header {
+  background-color: #e5d047;
+  border-radius: 10px;
+  grid-area: h;
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.012);
+  transition: all .2s ease-in-out;
+}
+
+header:hover {
+  transform: scale(1.01);
+}
+
+main {
+  background-color: #59c1b0;
+  border-radius: 10px;
+  grid-area: m;
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.012);
+  transition: all .2s ease-in-out;
+}
+
+main:hover {
+  transform: scale(1.01);
+}
+
+aside {
+  background-color: #65c159;
+  border-radius: 10px;
+  grid-area: a;
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.012);
+  transition: all .2s ease-in-out;
+}
+
+aside:hover {
+  transform: scale(1.01);
+}
+
+footer {
+  background-color: #c15959;
+  border-radius: 10px;
+  grid-area: f;
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.012);
+  transition: all .2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer:hover {
+  transform: scale(1.011);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
