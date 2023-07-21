@@ -11,6 +11,9 @@ body {
   justify-content: center;
   font-family: 'Nunito';
   height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 100px;
 }
 
 .container {
@@ -107,7 +110,24 @@ footer:hover {
   transform: scale(1.011);
 }
 
+.two {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 a {
   text-decoration: none;
   color: white;
+  transition: all .3s ease-in-out;
+}
+
+a:hover {
+  color: #f6da22;
+}
+
+hr {
+  width: 100%;
 }
